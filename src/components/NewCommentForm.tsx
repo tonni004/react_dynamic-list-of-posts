@@ -58,7 +58,7 @@ export const NewCommentForm: React.FC<Props> = ({ loader, onAdd }) => {
       return;
     }
 
-    onAdd(newComment);
+    await onAdd(newComment);
     setNewComment(prevComment => ({ ...prevComment, body: '' }));
     setTouched({ name: false, email: false, body: false });
   };

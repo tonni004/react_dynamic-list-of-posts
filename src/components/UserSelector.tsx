@@ -11,7 +11,7 @@ type Props = {
 export const UserSelector: React.FC<Props> = ({
   users,
   currUser,
-  setCurrUser = () => {},
+  setCurrUser,
 }) => {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
 

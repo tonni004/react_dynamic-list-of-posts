@@ -12,8 +12,8 @@ type Props = {
 export const PostsList: React.FC<Props> = ({
   posts,
   currPost,
-  setOpenModal = () => {},
-  setCurrPost = () => {},
+  setOpenModal,
+  setCurrPost,
 }) => {
   const onOpenPost = (post: Post) => {
     const isSamePost = currPost && currPost?.id === post.id;

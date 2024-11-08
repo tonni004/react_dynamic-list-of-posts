@@ -14,7 +14,7 @@ type Props = {
 export const PostDetails: React.FC<Props> = ({
   currPost,
   openModal,
-  setOpenModal = () => {},
+  setOpenModal,
 }) => {
   const [comments, setComments] = useState<Comment[]>([]);
   const [error, setError] = useState(false);
